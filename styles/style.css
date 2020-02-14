@@ -1,0 +1,53 @@
+.wrapper {
+    background: black;
+    position: relative;
+}
+.wrapper::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    filter: hue-rotate(90deg);
+    z-index: 1;
+}
+header {
+    padding-top: 100px;
+}
+.main {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    background-image: url("../images/hero-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main2 {
+    position: relative;
+    background: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    z-index: 2;
+}
+.statistic{
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to left, #DDA0DD, #DA70D6, #DDA0DD);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+h1 {
+    text-align: center;
+    margin-top: 300px;
+}
+h2, h4 {
+    text-align: center;
+}
+.main3 > h2 {
+    font-size: 60px;
+}
